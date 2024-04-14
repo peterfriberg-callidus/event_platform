@@ -1,9 +1,9 @@
 'use client'
 
+import { headerLinks } from "@/constants"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import React from "react"
-import {headerLinks} from "@/constants";
-import Link from "next/link";
-import {usePathname} from "next/navigation";
 
 const NavItems = () => {
     const pathname = usePathname();

@@ -9,16 +9,17 @@ export interface IEvent extends Document {
     imageUrl: string;
     startDateTime: Date;
     endDateTime: Date;
-    price?: string;
+    price: string;
     isFree: boolean;
-    url: string;
-    category: { _id: string, name: string };
-    organizer: { _id: string, firstName: string, lastName: string };
+    url?: string;
+    category: { _id: string, name: string }
+    organizer: { _id: string, firstName: string, lastName: string }
 }
+
 const EventSchema = new Schema({
     title: { type: String, required: true },
     description: { type: String },
-    location: { type: String, required: true },
+    location: { type: String },
     createdAt: { type: Date, default: Date.now },
     imageUrl: { type: String, required: true },
     startDateTime: { type: Date, default: Date.now },

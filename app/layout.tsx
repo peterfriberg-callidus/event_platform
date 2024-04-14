@@ -11,22 +11,22 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
     title: "Evently",
-    description: "Event app for all your needs",
+    description: "Evently is a platform for event management.",
     icons: {
         icon: '/assets/images/logo.svg'
     }
-};
+}
 
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
-}>) {
+    children,
+}: {
+    children: React.ReactNode
+}) {
     return (
         <ClerkProvider>
             <html lang="en">
               <body className={poppins.variable}>{children}</body>
             </html>
         </ClerkProvider>
-    );
+    )
 }
