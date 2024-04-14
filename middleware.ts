@@ -5,7 +5,7 @@ export default authMiddleware({
         '/',
         '/favicon.ico',
         '/assets/images/logo.svg',
-        '/assets/*',
+        '/assets/(.*)',
         'events:id',
         'api/webhook/clerk',
         'api/webhook/stripe',
