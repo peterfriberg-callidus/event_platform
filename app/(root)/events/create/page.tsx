@@ -7,6 +7,8 @@ const CreateEvent = () => {
 
     const userId = sessionClaims?.userId as string;
 
+    console.log('USERID IS: ', userId);
+
     return (
         <>
             <section className="bg-slate-50 bg-ditted-pattern bg-cover bg-center py-5 md:py-10">
